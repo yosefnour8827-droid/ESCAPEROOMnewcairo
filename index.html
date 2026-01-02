@@ -1,72 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>ESCAPEROOMnewcairo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape Room</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #000; /* أسود زي التصميم اللي انت عايزه */
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        h1 {
+            margin: 20px 0;
+        }
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      -webkit-tap-highlight-color: transparent;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    html, body {
-      height: 100%;
-      scroll-snap-type: y mandatory;
-      overflow-y: scroll;
-      background: #000;
-    }
-
-    body {
-      overscroll-behavior: contain;
-    }
-
-    .section {
-      height: 100vh;
-      width: 100%;
-      scroll-snap-align: start;
-      scroll-snap-stop: always;
-    }
-
-    .section img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      transition: transform 0.6s ease;
-    }
-
-    /* إحساس حركة خفيف */
-    .section:active img {
-      transform: scale(0.98);
-    }
-  </style>
+        .page-img {
+            width: 90%;        /* تاخد 90% من عرض الصفحة */
+            max-width: 600px;  /* أقصى عرض للصورة */
+            height: auto;      /* يحافظ على نسبة الطول للعرض */
+            display: block;
+            margin: 20px auto; /* وسط الصفحة ويبعد عن بعضه */
+            border: 2px solid #fff; /* إطار أبيض optional */
+            border-radius: 10px;     /* حواف دائرية */
+        }
+    </style>
 </head>
-
 <body>
+    <h1>Escape Room</h1>
 
-  <!-- الأسعار -->
-  <div class="section">
-    <img src="page1.jpg" alt="Prices">
-  </div>
-
-  <!-- البوسترات -->
-  <div class="section">
-    <img src="page2.jpg" alt="Escape Rooms">
-  </div>
-
-  <!-- الكلام والعنوان -->
-  <div class="section">
-    <img src="page3.jpg" alt="Info">
-  </div>
+    <img src="page1.jpg" alt="Page 1" class="page-img">
+    <img src="page2.jpg" alt="Page 2" class="page-img">
+    <img src="page3.jpg" alt="Page 3" class="page-img">
 
 </body>
 </html>
